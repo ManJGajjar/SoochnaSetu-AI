@@ -31,7 +31,7 @@ The system addresses the critical challenge of information asymmetry in civic en
 ## User Personas
 
 ### Persona 1: Rural Farmer (Low Digital Literacy)
-- **Name**: Ramesh Kumar
+- **Name**: ABC
 - **Age**: 45
 - **Location**: Rural Maharashtra
 - **Education**: Grade 5
@@ -42,7 +42,7 @@ The system addresses the critical challenge of information asymmetry in civic en
 - **Needs**: Voice-based interaction, simple language explanations, step-by-step guidance
 
 ### Persona 2: Urban Student (Moderate Digital Literacy)
-- **Name**: Priya Sharma
+- **Name**: XYZ
 - **Age**: 22
 - **Location**: Bangalore
 - **Education**: Undergraduate
@@ -53,7 +53,7 @@ The system addresses the critical challenge of information asymmetry in civic en
 - **Needs**: Quick filtering, eligibility checking, document checklists, deadline tracking
 
 ### Persona 3: Senior Citizen (Low Digital Literacy)
-- **Name**: Lakshmi Iyer
+- **Name**: TPO
 - **Age**: 68
 - **Location**: Chennai
 - **Education**: High school
@@ -64,7 +64,7 @@ The system addresses the critical challenge of information asymmetry in civic en
 - **Needs**: Large text, voice output, simple explanations, family-shareable information
 
 ### Persona 4: Policy Researcher (High Digital Literacy)
-- **Name**: Dr. Anjali Mehta
+- **Name**: LMS
 - **Age**: 35
 - **Location**: Delhi
 - **Education**: PhD in Public Policy
@@ -486,4 +486,5 @@ The system addresses the critical challenge of information asymmetry in civic en
 - Success metrics provide quantifiable targets for measuring project outcomes
 - Risk analysis identifies key threats and provides mitigation strategies
 - User personas ground requirements in real-world user needs and contexts
+
 
