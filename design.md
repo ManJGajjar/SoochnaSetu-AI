@@ -20,7 +20,7 @@ The system serves four primary user personas: rural farmers with low digital lit
 
 ### High-Level System Architecture
 
-The CivicLens AI platform consists of six primary layers:
+The Soochna Setu AI platform consists of six primary layers:
 
 **1. Presentation Layer**
 - Web application (React/Next.js) hosted on S3 + CloudFront
@@ -622,7 +622,7 @@ interface DocumentMetadata {
 
 ### S3 Bucket Structure
 
-**civiclens-documents-{env}**
+**soochnasetuai-documents-{env}**
 
 ```
 /raw/
@@ -1710,7 +1710,7 @@ class CircuitBreaker:
 
 ### Dual Testing Approach
 
-CivicLens AI employs a comprehensive testing strategy combining unit tests for specific scenarios and property-based tests for universal correctness guarantees. Both approaches are complementary and necessary for ensuring system reliability.
+Soochna Setu AI employs a comprehensive testing strategy combining unit tests for specific scenarios and property-based tests for universal correctness guarantees. Both approaches are complementary and necessary for ensuring system reliability.
 
 **Unit Tests**: Verify specific examples, edge cases, and integration points
 **Property Tests**: Verify universal properties across all inputs through randomization
@@ -1782,7 +1782,7 @@ from hypothesis import given, strategies as st
 )
 def test_property_scheme_matching_completeness(age, income, state):
     """
-    Feature: civic-lens-ai, Property 18: Scheme Matching Completeness
+    Feature: soochna-setu-ai, Property 18: Scheme Matching Completeness
     
     For any User_Profile, the Scheme_Suggestor SHALL evaluate all active 
     schemes and return all schemes where the user satisfies hard eligibility constraints.
@@ -1814,7 +1814,7 @@ def test_property_scheme_matching_completeness(age, income, state):
 Each property test MUST include a comment tag referencing the design document property:
 
 ```python
-# Feature: civic-lens-ai, Property 19: Recommendation Sorting
+# Feature: soochna-setu-ai, Property 19: Recommendation Sorting
 # For any list of scheme recommendations, schemes SHALL be sorted by eligibilityScore descending
 ```
 
@@ -2258,5 +2258,6 @@ graph TB
     Alarms --> SNS
 ```
 
-This design document provides a comprehensive technical blueprint for implementing CivicLens AI, covering architecture, data models, security, scalability, performance optimization, correctness properties, error handling, and testing strategies. The design is optimized for a hackathon MVP while providing a clear path for future enhancements and production deployment.
+This design document provides a comprehensive technical blueprint for implementing SoochnaSetu AI, covering architecture, data models, security, scalability, performance optimization, correctness properties, error handling, and testing strategies. The design is optimized for a hackathon MVP while providing a clear path for future enhancements and production deployment.
+
 
