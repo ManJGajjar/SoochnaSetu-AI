@@ -1,8 +1,8 @@
-# Design Document: CivicLens AI
+# Design Document: Soochna Setu AI
 
 ## Overview
 
-CivicLens AI is a serverless, AI-powered civic intelligence platform built entirely on AWS services. The system transforms complex government documents, policies, and schemes into accessible, personalized information for citizens across literacy and language barriers.
+Soochna Setu AI is a serverless, AI-powered civic intelligence platform built entirely on AWS services. The system transforms complex government documents, policies, and schemes into accessible, personalized information for citizens across literacy and language barriers.
 
 The architecture follows a microservices pattern using AWS Lambda functions orchestrated through API Gateway, with Amazon Bedrock providing LLM capabilities, Amazon Textract handling document processing, and Amazon OpenSearch enabling semantic search through vector embeddings. The platform implements a hybrid rule-based and AI-driven approach for scheme recommendations, ensuring both accuracy and explainability.
 
@@ -2259,3 +2259,4 @@ graph TB
 ```
 
 This design document provides a comprehensive technical blueprint for implementing CivicLens AI, covering architecture, data models, security, scalability, performance optimization, correctness properties, error handling, and testing strategies. The design is optimized for a hackathon MVP while providing a clear path for future enhancements and production deployment.
+
