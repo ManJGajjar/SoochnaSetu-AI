@@ -4,11 +4,11 @@
 
 Soochna Setu AI is an AI-powered civic intelligence platform designed to democratize access to government information by transforming complex public data, policies, budgets, and schemes into simple, accessible language. The platform serves as a bridge between citizens and government information, providing personalized scheme recommendations based on user profiles while maintaining transparency through source citations and explainability.
 
-The system addresses the critical challenge of information asymmetry in civic engagement, where citizens struggle to understand dense policy documents, navigate complex eligibility criteria, and identify relevant government schemes. By leveraging AWS AI services and serverless architecture, CivicLens AI aims to scale nationally while maintaining fast response times and accessibility for users with varying literacy levels and connectivity constraints.
+The system addresses the critical challenge of information asymmetry in civic engagement, where citizens struggle to understand dense policy documents, navigate complex eligibility criteria, and identify relevant government schemes. By leveraging AWS AI services and serverless architecture, SoochnaSetu AI aims to scale nationally while maintaining fast response times and accessibility for users with varying literacy levels and connectivity constraints.
 
 ## Glossary
 
-- **CivicLens_System**: The complete AI-powered civic intelligence platform including all modules
+- **SoochnaSetu_System**: The complete AI-powered civic intelligence platform including all modules
 - **Public_Data_Explainer**: Module that processes and explains government documents, budgets, and policies
 - **Scheme_Simplifier**: Module that breaks down government scheme details into understandable language
 - **Scheme_Suggestor**: AI-powered recommendation engine that matches users with eligible schemes
@@ -85,10 +85,10 @@ The system addresses the critical challenge of information asymmetry in civic en
 1. WHEN a user uploads a PDF document under 50MB, THE Document_Parser SHALL extract all text and tabular data within 10 seconds
 2. WHEN a user uploads an image file (PNG, JPG), THE Document_Parser SHALL perform OCR and extract text with minimum 90% accuracy
 3. WHEN a document contains tables, THE Document_Parser SHALL preserve table structure and extract all cells correctly
-4. IF a document upload fails due to size limits, THEN THE CivicLens_System SHALL return a clear error message indicating the maximum allowed size
-5. WHEN a document is successfully processed, THE CivicLens_System SHALL store the original in S3_Bucket and index the content in Vector_Store
-6. THE CivicLens_System SHALL support PDF, PNG, JPG, and JPEG file formats for upload
-7. WHEN multiple documents are uploaded in sequence, THE CivicLens_System SHALL process them independently without data mixing
+4. IF a document upload fails due to size limits, THEN THE SoochnaSetu_System SHALL return a clear error message indicating the maximum allowed size
+5. WHEN a document is successfully processed, THE SoochnaSetu_System SHALL store the original in S3_Bucket and index the content in Vector_Store
+6. THE SoochnaSetu_System SHALL support PDF, PNG, JPG, and JPEG file formats for upload
+7. WHEN multiple documents are uploaded in sequence, THE SoochnaSetu_System SHALL process them independently without data mixing
 
 ### Requirement 2: Public Data Explanation
 
@@ -113,8 +113,8 @@ The system addresses the critical challenge of information asymmetry in civic en
 1. WHEN the LLM_Engine generates any explanation, THE Citation_Layer SHALL include references to source document names
 2. WHEN citing information, THE Citation_Layer SHALL provide specific page numbers where the information was found
 3. WHEN displaying citations, THE Citation_Layer SHALL show the exact paragraph or sentence extracted from the source
-4. THE CivicLens_System SHALL allow users to click on citations to view the original document section
-5. IF the LLM_Engine cannot find source information for a claim, THEN THE CivicLens_System SHALL clearly mark it as inferred or general knowledge
+4. THE SoochnaSetu_System SHALL allow users to click on citations to view the original document section
+5. IF the LLM_Engine cannot find source information for a claim, THEN THE SoochnaSetu_System SHALL clearly mark it as inferred or general knowledge
 6. WHEN multiple sources support a statement, THE Citation_Layer SHALL list all relevant sources
 
 ### Requirement 4: Scheme Simplification
@@ -151,13 +151,13 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. THE CivicLens_System SHALL collect User_Profile data including age, income bracket, occupation, state, category (General/SC/ST/OBC), and disability status
-2. WHEN a user creates a profile, THE CivicLens_System SHALL validate all required fields before saving
-3. THE CivicLens_System SHALL store User_Profile data encrypted at rest in DynamoDB
+1. THE SoochnaSetu_System SHALL collect User_Profile data including age, income bracket, occupation, state, category (General/SC/ST/OBC), and disability status
+2. WHEN a user creates a profile, THE SoochnaSetu_System SHALL validate all required fields before saving
+3. THE SoochnaSetu_System SHALL store User_Profile data encrypted at rest in DynamoDB
 4. WHEN a user updates their profile, THE Scheme_Suggestor SHALL automatically refresh recommendations
-5. THE CivicLens_System SHALL allow users to view, edit, and delete their profile data at any time
-6. THE CivicLens_System SHALL NOT share User_Profile data with third parties without explicit consent
-7. WHEN a user deletes their account, THE CivicLens_System SHALL permanently remove all associated User_Profile data within 24 hours
+5. THE SoochnaSetu_System SHALL allow users to view, edit, and delete their profile data at any time
+6. THE SoochnaSetu_System SHALL NOT share User_Profile data with third parties without explicit consent
+7. WHEN a user deletes their account, THE SoochnaSetu_System SHALL permanently remove all associated User_Profile data within 24 hours
 
 ### Requirement 7: Multi-Language Support
 
@@ -165,12 +165,12 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. THE CivicLens_System SHALL support English and at least one Regional_Language (Hindi, Tamil, Telugu, Marathi, Bengali, or Kannada)
+1. THE SoochnaSetu_System SHALL support English and at least one Regional_Language (Hindi, Tamil, Telugu, Marathi, Bengali, or Kannada)
 2. WHEN a user selects a Regional_Language, THE LLM_Engine SHALL generate all explanations and summaries in that language
-3. THE CivicLens_System SHALL allow users to switch languages at any time during a User_Session
-4. WHEN translating scheme information, THE CivicLens_System SHALL preserve technical accuracy while adapting cultural context
-5. THE CivicLens_System SHALL display UI elements (buttons, labels, menus) in the selected language
-6. WHERE Regional_Language content is unavailable, THE CivicLens_System SHALL clearly indicate English-only content
+3. THE SoochnaSetu_System SHALL allow users to switch languages at any time during a User_Session
+4. WHEN translating scheme information, THE SoochnaSetu_System SHALL preserve technical accuracy while adapting cultural context
+5. THE SoochnaSetu_System SHALL display UI elements (buttons, labels, menus) in the selected language
+6. WHERE Regional_Language content is unavailable, THE SoochnaSetu_System SHALL clearly indicate English-only content
 
 ### Requirement 8: Voice-Based Interaction
 
@@ -182,7 +182,7 @@ The system addresses the critical challenge of information asymmetry in civic en
 2. THE Voice_Interface SHALL support voice input in English and the selected Regional_Language
 3. WHEN generating responses, THE Voice_Interface SHALL use Amazon Polly to convert text to natural-sounding speech
 4. THE Voice_Interface SHALL allow users to control speech rate (slow, normal, fast)
-5. WHEN voice output is active, THE CivicLens_System SHALL provide audio cues for navigation and confirmation
+5. WHEN voice output is active, THE SoochnaSetu_System SHALL provide audio cues for navigation and confirmation
 6. THE Voice_Interface SHALL support pause, resume, and replay controls for audio output
 7. WHEN network connectivity is poor, THE Voice_Interface SHALL provide clear feedback about audio quality issues
 
@@ -192,13 +192,13 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. THE CivicLens_System SHALL use Amazon Cognito for user authentication and session management
-2. WHEN a user registers, THE CivicLens_System SHALL require email verification before account activation
-3. THE CivicLens_System SHALL enforce password complexity requirements (minimum 8 characters, mixed case, numbers, special characters)
-4. WHEN a user logs in, THE CivicLens_System SHALL create a secure User_Session with automatic timeout after 30 minutes of inactivity
-5. THE CivicLens_System SHALL encrypt all data in transit using TLS 1.2 or higher
-6. THE CivicLens_System SHALL encrypt all sensitive User_Profile data at rest using AWS KMS
-7. WHEN suspicious login activity is detected, THE CivicLens_System SHALL require additional verification
+1. THE SoochnaSetu_System SHALL use Amazon Cognito for user authentication and session management
+2. WHEN a user registers, THE SoochnaSetu_System SHALL require email verification before account activation
+3. THE SoochnaSetu_System SHALL enforce password complexity requirements (minimum 8 characters, mixed case, numbers, special characters)
+4. WHEN a user logs in, THE SoochnaSetu_System SHALL create a secure User_Session with automatic timeout after 30 minutes of inactivity
+5. THE SoochnaSetu_System SHALL encrypt all data in transit using TLS 1.2 or higher
+6. THE SoochnaSetu_System SHALL encrypt all sensitive User_Profile data at rest using AWS KMS
+7. WHEN suspicious login activity is detected, THE SoochnaSetu_System SHALL require additional verification
 
 ### Requirement 10: Performance and Scalability
 
@@ -206,13 +206,13 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. WHEN a user requests a document summary, THE CivicLens_System SHALL return results within 5 seconds for documents under 50 pages
-2. THE CivicLens_System SHALL handle at least 1000 concurrent users without performance degradation
+1. WHEN a user requests a document summary, THE SoochnaSetu_System SHALL return results within 5 seconds for documents under 50 pages
+2. THE SoochnaSetu_System SHALL handle at least 1000 concurrent users without performance degradation
 3. WHEN API_Gateway receives requests, THE Lambda_Function SHALL have cold start times under 3 seconds
-4. THE CivicLens_System SHALL use caching to serve frequently requested scheme information within 1 second
-5. WHEN Vector_Store is queried, THE CivicLens_System SHALL return semantic search results within 2 seconds
-6. THE CivicLens_System SHALL automatically scale Lambda_Function instances based on traffic load
-7. WHEN system load exceeds 80% capacity, THE CivicLens_System SHALL trigger auto-scaling within 30 seconds
+4. THE SoochnaSetu_System SHALL use caching to serve frequently requested scheme information within 1 second
+5. WHEN Vector_Store is queried, THE SoochnaSetu_System SHALL return semantic search results within 2 seconds
+6. THE SoochnaSetu_System SHALL automatically scale Lambda_Function instances based on traffic load
+7. WHEN system load exceeds 80% capacity, THE SoochnaSetu_System SHALL trigger auto-scaling within 30 seconds
 
 ### Requirement 11: Low Bandwidth Optimization
 
@@ -220,13 +220,13 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. THE CivicLens_System SHALL compress API responses to minimize data transfer size
-2. WHEN network speed is detected as slow, THE CivicLens_System SHALL offer text-only mode without images
-3. THE CivicLens_System SHALL implement progressive loading for long documents
-4. THE CivicLens_System SHALL cache previously viewed content locally for offline access
-5. WHEN a request times out due to connectivity, THE CivicLens_System SHALL retry automatically up to 3 times
-6. THE CivicLens_System SHALL provide a lightweight mobile-optimized interface under 500KB initial load
-7. WHEN uploading documents on slow connections, THE CivicLens_System SHALL show upload progress and allow resumption
+1. THE SoochnaSetu_System SHALL compress API responses to minimize data transfer size
+2. WHEN network speed is detected as slow, THE SoochnaSetu_System SHALL offer text-only mode without images
+3. THE SoochnaSetu_System SHALL implement progressive loading for long documents
+4. THE SoochnaSetu_System SHALL cache previously viewed content locally for offline access
+5. WHEN a request times out due to connectivity, THE SoochnaSetu_System SHALL retry automatically up to 3 times
+6. THE SoochnaSetu_System SHALL provide a lightweight mobile-optimized interface under 500KB initial load
+7. WHEN uploading documents on slow connections, THE SoochnaSetu_System SHALL show upload progress and allow resumption
 
 ### Requirement 12: Data Privacy and Compliance
 
@@ -234,13 +234,13 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. THE CivicLens_System SHALL implement data minimization by collecting only necessary User_Profile fields
-2. THE CivicLens_System SHALL provide a clear privacy policy explaining data collection, usage, and retention
-3. WHEN a user requests their data, THE CivicLens_System SHALL export all User_Profile and interaction history within 48 hours
-4. THE CivicLens_System SHALL retain user data only as long as the account is active plus 90 days
-5. THE CivicLens_System SHALL log all data access events for audit purposes
-6. THE CivicLens_System SHALL NOT use User_Profile data for purposes other than scheme recommendation without explicit consent
-7. WHEN a data breach is detected, THE CivicLens_System SHALL notify affected users within 72 hours
+1. THE SoochnaSetu_System SHALL implement data minimization by collecting only necessary User_Profile fields
+2. THE SoochnaSetu_System SHALL provide a clear privacy policy explaining data collection, usage, and retention
+3. WHEN a user requests their data, THE SoochnaSetu_System SHALL export all User_Profile and interaction history within 48 hours
+4. THE SoochnaSetu_System SHALL retain user data only as long as the account is active plus 90 days
+5. THE SoochnaSetu_System SHALL log all data access events for audit purposes
+6. THE SoochnaSetu_System SHALL NOT use User_Profile data for purposes other than scheme recommendation without explicit consent
+7. WHEN a data breach is detected, THE SoochnaSetu_System SHALL notify affected users within 72 hours
 
 ### Requirement 13: Scheme Database Management
 
@@ -249,26 +249,26 @@ The system addresses the critical challenge of information asymmetry in civic en
 #### Acceptance Criteria
 
 1. THE Scheme_Database SHALL store structured data for each scheme including name, eligibility criteria, required documents, application process, and official links
-2. THE CivicLens_System SHALL support bulk import of scheme data from CSV or JSON formats
-3. WHEN a scheme is updated, THE CivicLens_System SHALL version the changes and maintain update history
+2. THE SoochnaSetu_System SHALL support bulk import of scheme data from CSV or JSON formats
+3. WHEN a scheme is updated, THE SoochnaSetu_System SHALL version the changes and maintain update history
 4. THE Scheme_Database SHALL support tagging schemes by category (agriculture, education, healthcare, housing, etc.)
-5. THE CivicLens_System SHALL validate scheme data completeness before making it available to users
+5. THE SoochnaSetu_System SHALL validate scheme data completeness before making it available to users
 6. THE Scheme_Database SHALL index schemes for fast retrieval by multiple attributes (state, category, income bracket)
-7. WHEN a scheme expires or is discontinued, THE CivicLens_System SHALL mark it as inactive but retain historical data
+7. WHEN a scheme expires or is discontinued, THE SoochnaSetu_System SHALL mark it as inactive but retain historical data
 
 ### Requirement 14: API Design and Integration
 
-**User Story:** As a developer, I want well-documented APIs, so that I can integrate CivicLens AI with other applications.
+**User Story:** As a developer, I want well-documented APIs, so that I can integrate SoochnaSetu AI with other applications.
 
 #### Acceptance Criteria
 
 1. THE API_Gateway SHALL expose RESTful endpoints for all core functionality (document upload, explanation, scheme search, profile management)
 2. THE API_Gateway SHALL implement rate limiting of 100 requests per minute per user to prevent abuse
 3. THE API_Gateway SHALL return standardized error responses with clear error codes and messages
-4. THE CivicLens_System SHALL provide API documentation with request/response examples for all endpoints
+4. THE SoochnaSetu_System SHALL provide API documentation with request/response examples for all endpoints
 5. THE API_Gateway SHALL support CORS for web application integration
 6. THE API_Gateway SHALL require authentication tokens for all endpoints except public scheme browsing
-7. WHEN API versions change, THE CivicLens_System SHALL maintain backward compatibility for at least 6 months
+7. WHEN API versions change, THE SoochnaSetu_System SHALL maintain backward compatibility for at least 6 months
 
 ### Requirement 15: Monitoring and Observability
 
@@ -276,13 +276,13 @@ The system addresses the critical challenge of information asymmetry in civic en
 
 #### Acceptance Criteria
 
-1. THE CivicLens_System SHALL log all Lambda_Function invocations with execution time, memory usage, and errors
-2. THE CivicLens_System SHALL track key metrics including Inference_Time, API response times, and error rates
-3. WHEN error rates exceed 5% over a 5-minute window, THE CivicLens_System SHALL trigger alerts
-4. THE CivicLens_System SHALL provide dashboards showing real-time system health and usage statistics
-5. THE CivicLens_System SHALL retain logs for at least 30 days for troubleshooting
-6. THE CivicLens_System SHALL track user journey metrics (document uploads, scheme searches, profile completions)
-7. WHEN Lambda_Function failures occur, THE CivicLens_System SHALL capture stack traces and context for debugging
+1. THE SoochnaSetu_System SHALL log all Lambda_Function invocations with execution time, memory usage, and errors
+2. THE SoochnaSetu_System SHALL track key metrics including Inference_Time, API response times, and error rates
+3. WHEN error rates exceed 5% over a 5-minute window, THE SoochnaSetu_System SHALL trigger alerts
+4. THE SoochnaSetu_System SHALL provide dashboards showing real-time system health and usage statistics
+5. THE SoochnaSetu_System SHALL retain logs for at least 30 days for troubleshooting
+6. THE SoochnaSetu_System SHALL track user journey metrics (document uploads, scheme searches, profile completions)
+7. WHEN Lambda_Function failures occur, THE SoochnaSetu_System SHALL capture stack traces and context for debugging
 
 ## System Constraints
 
@@ -486,5 +486,6 @@ The system addresses the critical challenge of information asymmetry in civic en
 - Success metrics provide quantifiable targets for measuring project outcomes
 - Risk analysis identifies key threats and provides mitigation strategies
 - User personas ground requirements in real-world user needs and contexts
+
 
 
