@@ -1,8 +1,8 @@
-# Requirements Document: CivicLens AI
+# Requirements Document: Soochna Setu AI
 
 ## Introduction
 
-CivicLens AI is an AI-powered civic intelligence platform designed to democratize access to government information by transforming complex public data, policies, budgets, and schemes into simple, accessible language. The platform serves as a bridge between citizens and government information, providing personalized scheme recommendations based on user profiles while maintaining transparency through source citations and explainability.
+Soochna Setu AI is an AI-powered civic intelligence platform designed to democratize access to government information by transforming complex public data, policies, budgets, and schemes into simple, accessible language. The platform serves as a bridge between citizens and government information, providing personalized scheme recommendations based on user profiles while maintaining transparency through source citations and explainability.
 
 The system addresses the critical challenge of information asymmetry in civic engagement, where citizens struggle to understand dense policy documents, navigate complex eligibility criteria, and identify relevant government schemes. By leveraging AWS AI services and serverless architecture, CivicLens AI aims to scale nationally while maintaining fast response times and accessibility for users with varying literacy levels and connectivity constraints.
 
@@ -486,3 +486,4 @@ The system addresses the critical challenge of information asymmetry in civic en
 - Success metrics provide quantifiable targets for measuring project outcomes
 - Risk analysis identifies key threats and provides mitigation strategies
 - User personas ground requirements in real-world user needs and contexts
+
