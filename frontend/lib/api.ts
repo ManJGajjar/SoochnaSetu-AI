@@ -1,4 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://lpbk52uyspqot6qucbffi2vzri0imjqt.lambda-url.ap-south-1.on.aws';
 
 async function apiRequest(path: string, options: RequestInit = {}) {
   const url = `${API_BASE}${path}`;
