@@ -1,0 +1,2612 @@
+[
+  {
+    "schemeId": "pm-kisan-001",
+    "name": "PM-KISAN",
+    "nameLocal": "पीएम-किसान",
+    "description": "Direct income support to small and marginal farmers",
+    "simpleDescription": "Government gives farmers Rs 6000 every year directly in bank account",
+    "category": "agriculture",
+    "state": "ALL",
+    "benefitAmount": "Rs 6,000/year",
+    "benefitType": "Direct Bank Transfer",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "farmer"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": null
+    },
+    "benefits": [
+      "Rs 6000 per year in 3 installments",
+      "Direct bank transfer"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Land Records"
+    ],
+    "applicationProcess": [
+      "Visit pmkisan.gov.in",
+      "Click New Farmer Registration",
+      "Enter Aadhaar and verify OTP",
+      "Fill land and bank details",
+      "Submit"
+    ],
+    "officialLink": "https://pmkisan.gov.in",
+    "helplineNumber": "155261",
+    "commonRejectionReasons": [
+      "Institutional landholder",
+      "Income tax payer",
+      "Government employee"
+    ],
+    "tags": [
+      "farmer",
+      "agriculture",
+      "income support"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmfby-002",
+    "name": "PM Fasal Bima Yojana",
+    "nameLocal": "पीएम फसल बीमा योजना",
+    "description": "Crop insurance scheme for farmers",
+    "simpleDescription": "Insurance for your crops - if crops fail due to weather, you get money back",
+    "category": "agriculture",
+    "state": "ALL",
+    "benefitAmount": "Up to full sum insured",
+    "benefitType": "Insurance Claim",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "farmer"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": null
+    },
+    "benefits": [
+      "Crop insurance at low premium",
+      "Coverage for natural calamities"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Land Records",
+      "Sowing Certificate"
+    ],
+    "applicationProcess": [
+      "Visit pmfby.gov.in",
+      "Register with Aadhaar",
+      "Select crop and season",
+      "Pay premium",
+      "Get policy"
+    ],
+    "officialLink": "https://pmfby.gov.in",
+    "helplineNumber": "1800-180-1551",
+    "commonRejectionReasons": [
+      "Late application",
+      "Incorrect land records"
+    ],
+    "tags": [
+      "farmer",
+      "insurance",
+      "crop"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "kcc-003",
+    "name": "Kisan Credit Card",
+    "nameLocal": "किसान क्रेडिट कार्ड",
+    "description": "Credit facility for farmers",
+    "simpleDescription": "A special credit card for farmers to get loans at low interest for farming",
+    "category": "agriculture",
+    "state": "ALL",
+    "benefitAmount": "Up to Rs 3 lakh at 4% interest",
+    "benefitType": "Credit Facility",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 75,
+      "occupations": [
+        "farmer"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": null
+    },
+    "benefits": [
+      "Low interest credit",
+      "Flexible repayment"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Land Records",
+      "Passport Photo",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit nearest bank branch",
+      "Fill KCC application form",
+      "Submit land documents",
+      "Bank verification",
+      "Card issued in 14 days"
+    ],
+    "officialLink": "https://pmkisan.gov.in/KCC.aspx",
+    "helplineNumber": "155261",
+    "commonRejectionReasons": [
+      "No land records",
+      "Existing loan default"
+    ],
+    "tags": [
+      "farmer",
+      "credit",
+      "loan"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "ayushman-004",
+    "name": "Ayushman Bharat PM-JAY",
+    "nameLocal": "आयुष्मान भारत",
+    "description": "Health insurance cover of Rs 5 lakh per family per year",
+    "simpleDescription": "Free health insurance of Rs 5 lakh for hospital treatment",
+    "category": "healthcare",
+    "state": "ALL",
+    "benefitAmount": "Rs 5 lakh/year per family",
+    "benefitType": "Health Insurance",
+    "eligibility": {
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": null
+    },
+    "benefits": [
+      "Rs 5 lakh health cover",
+      "Cashless treatment at empanelled hospitals",
+      "Covers 1500+ procedures"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Ration Card",
+      "SECC Data"
+    ],
+    "applicationProcess": [
+      "Check eligibility at mera.pmjay.gov.in",
+      "Visit nearest CSC center",
+      "Get Ayushman card generated",
+      "Use at any empanelled hospital"
+    ],
+    "officialLink": "https://pmjay.gov.in",
+    "helplineNumber": "14555",
+    "commonRejectionReasons": [
+      "Not in SECC database",
+      "Already covered under other scheme"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "hospital"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmay-urban-005",
+    "name": "PM Awas Yojana (Urban)",
+    "nameLocal": "पीएम आवास योजना (शहरी)",
+    "description": "Affordable housing for urban poor",
+    "simpleDescription": "Government helps you build or buy a house in the city with financial help",
+    "category": "housing",
+    "state": "ALL",
+    "benefitAmount": "Rs 1.5 to 2.67 lakh subsidy",
+    "benefitType": "Housing Subsidy",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": null
+    },
+    "benefits": [
+      "Interest subsidy on home loan",
+      "Up to Rs 2.67 lakh benefit"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Address Proof",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit pmaymis.gov.in",
+      "Check eligibility",
+      "Apply through bank or online",
+      "Submit documents",
+      "Get approval"
+    ],
+    "officialLink": "https://pmaymis.gov.in",
+    "helplineNumber": "1800-11-3377",
+    "commonRejectionReasons": [
+      "Already owns a house",
+      "Income exceeds limit"
+    ],
+    "tags": [
+      "housing",
+      "urban",
+      "subsidy"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmay-rural-006",
+    "name": "PM Awas Yojana (Gramin)",
+    "nameLocal": "पीएम आवास योजना (ग्रामीण)",
+    "description": "Housing assistance for rural BPL families",
+    "simpleDescription": "Government gives money to build a pucca house in village",
+    "category": "housing",
+    "state": "ALL",
+    "benefitAmount": "Rs 1.2 lakh (plain) / Rs 1.3 lakh (hilly)",
+    "benefitType": "Direct Transfer",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": null
+    },
+    "benefits": [
+      "Rs 1.2 lakh for house construction",
+      "MGNREGA convergence for additional support"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "BPL Certificate",
+      "Bank Account",
+      "Land Document"
+    ],
+    "applicationProcess": [
+      "Selected through SECC data",
+      "Gram Sabha verification",
+      "Approval by district authority",
+      "Money transferred in installments"
+    ],
+    "officialLink": "https://pmayg.nic.in",
+    "helplineNumber": "1800-11-6446",
+    "commonRejectionReasons": [
+      "Not in BPL list",
+      "Already has pucca house"
+    ],
+    "tags": [
+      "housing",
+      "rural",
+      "BPL"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "mgnrega-007",
+    "name": "MGNREGA",
+    "nameLocal": "मनरेगा",
+    "description": "100 days guaranteed wage employment per year",
+    "simpleDescription": "Government guarantees 100 days of work every year to rural families",
+    "category": "employment",
+    "state": "ALL",
+    "benefitAmount": "100 days employment/year",
+    "benefitType": "Wage Employment",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "unemployed",
+        "daily_wage",
+        "farmer"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "100 days guaranteed work",
+      "Minimum wage payment"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Job Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at Gram Panchayat",
+      "Get Job Card",
+      "Demand work in writing",
+      "Work assigned within 15 days"
+    ],
+    "officialLink": "https://nrega.nic.in",
+    "helplineNumber": "1800-345-22-44",
+    "commonRejectionReasons": [
+      "Not a rural household",
+      "Already employed"
+    ],
+    "tags": [
+      "employment",
+      "rural",
+      "wage"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nsp-008",
+    "name": "National Scholarship Portal",
+    "nameLocal": "राष्ट्रीय छात्रवृत्ति पोर्टल",
+    "description": "Scholarships for students from Class 1 to PhD",
+    "simpleDescription": "Government gives money to students for their education",
+    "category": "education",
+    "state": "ALL",
+    "benefitAmount": "Rs 10,000-50,000/year",
+    "benefitType": "Scholarship",
+    "eligibility": {
+      "ageMin": 5,
+      "ageMax": 35,
+      "occupations": [
+        "student"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Annual scholarship amount",
+      "Covers tuition and maintenance"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Mark Sheets",
+      "Bank Account",
+      "Institution ID"
+    ],
+    "applicationProcess": [
+      "Visit scholarships.gov.in",
+      "Register and login",
+      "Fill application",
+      "Upload documents",
+      "Submit before deadline"
+    ],
+    "officialLink": "https://scholarships.gov.in",
+    "helplineNumber": "0120-6619540",
+    "commonRejectionReasons": [
+      "Income exceeds limit",
+      "Duplicate application",
+      "Missing documents"
+    ],
+    "tags": [
+      "student",
+      "scholarship",
+      "education"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "postmatric-009",
+    "name": "Post Matric Scholarship SC/ST",
+    "nameLocal": "पोस्ट मैट्रिक छात्रवृत्ति",
+    "description": "Scholarships for SC/ST students studying after Class 10",
+    "simpleDescription": "Free education support for SC/ST students after 10th class",
+    "category": "education",
+    "state": "ALL",
+    "benefitAmount": "Rs 1,000-3,000/month",
+    "benefitType": "Scholarship",
+    "eligibility": {
+      "ageMin": 14,
+      "ageMax": 35,
+      "occupations": [
+        "student"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [
+        "SC",
+        "ST"
+      ]
+    },
+    "benefits": [
+      "Monthly stipend",
+      "Tuition fee waiver",
+      "Book allowance"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Income Certificate",
+      "Mark Sheets",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply on state scholarship portal",
+      "Submit caste and income certificates",
+      "Institution verification",
+      "Scholarship credited to bank"
+    ],
+    "officialLink": "https://scholarships.gov.in",
+    "helplineNumber": "0120-6619540",
+    "commonRejectionReasons": [
+      "Income above Rs 2.5 lakh",
+      "Not SC/ST category"
+    ],
+    "tags": [
+      "student",
+      "SC",
+      "ST",
+      "scholarship"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "mudra-010",
+    "name": "PM MUDRA Yojana",
+    "nameLocal": "पीएम मुद्रा योजना",
+    "description": "Loans up to Rs 10 lakh for small businesses",
+    "simpleDescription": "Easy loans for starting or growing a small business",
+    "category": "employment",
+    "state": "ALL",
+    "benefitAmount": "Up to Rs 10 lakh",
+    "benefitType": "Loan",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "self_employed",
+        "business_owner"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Loans without collateral",
+      "3 categories: Shishu, Kishore, Tarun"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Business Plan",
+      "Bank Account",
+      "Address Proof"
+    ],
+    "applicationProcess": [
+      "Visit any bank branch",
+      "Fill MUDRA loan form",
+      "Submit business plan",
+      "Bank processes loan",
+      "Amount disbursed"
+    ],
+    "officialLink": "https://mudra.org.in",
+    "helplineNumber": "1800-180-1111",
+    "commonRejectionReasons": [
+      "Poor credit history",
+      "No business plan"
+    ],
+    "tags": [
+      "business",
+      "loan",
+      "MSME"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "sukanya-011",
+    "name": "Sukanya Samriddhi Yojana",
+    "nameLocal": "सुकन्या समृद्धि योजना",
+    "description": "Savings scheme for girl child",
+    "simpleDescription": "Special savings account for daughters with high interest rate",
+    "category": "women_children",
+    "state": "ALL",
+    "benefitAmount": "8.2% interest rate",
+    "benefitType": "Savings Scheme",
+    "eligibility": {
+      "ageMax": 10,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "High interest rate",
+      "Tax benefits under 80C",
+      "Matures at age 21"
+    ],
+    "requiredDocuments": [
+      "Birth Certificate of girl",
+      "Aadhaar of parent",
+      "Address Proof",
+      "Passport Photo"
+    ],
+    "applicationProcess": [
+      "Visit any post office or bank",
+      "Fill account opening form",
+      "Deposit minimum Rs 250",
+      "Get passbook"
+    ],
+    "officialLink": "https://www.nsiindia.gov.in",
+    "helplineNumber": "1800-266-6868",
+    "commonRejectionReasons": [
+      "Girl child above 10 years",
+      "More than 2 accounts"
+    ],
+    "tags": [
+      "girl child",
+      "savings",
+      "women"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmmvy-012",
+    "name": "PM Matru Vandana Yojana",
+    "nameLocal": "पीएम मातृ वंदना योजना",
+    "description": "Cash benefit for pregnant women",
+    "simpleDescription": "Rs 5000 for pregnant women for nutrition and rest",
+    "category": "women_children",
+    "state": "ALL",
+    "benefitAmount": "Rs 5,000",
+    "benefitType": "Direct Transfer",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Rs 5000 in installments",
+      "Nutrition support"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "MCP Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit nearest Anganwadi center",
+      "Fill PMMVY form",
+      "Submit MCP card",
+      "Amount credited in 3 installments"
+    ],
+    "officialLink": "https://pmmvy.wcd.gov.in",
+    "helplineNumber": "181",
+    "commonRejectionReasons": [
+      "Not first pregnancy",
+      "Missing MCP card"
+    ],
+    "tags": [
+      "women",
+      "pregnancy",
+      "nutrition"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "ignoaps-013",
+    "name": "Indira Gandhi National Old Age Pension",
+    "nameLocal": "इंदिरा गांधी वृद्धावस्था पेंशन",
+    "description": "Monthly pension for senior citizens below poverty line",
+    "simpleDescription": "Monthly money for elderly poor people",
+    "category": "senior_citizens",
+    "state": "ALL",
+    "benefitAmount": "Rs 200-500/month + state top-up",
+    "benefitType": "Monthly Pension",
+    "eligibility": {
+      "ageMin": 60,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Monthly pension",
+      "Additional state contribution"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Age Proof",
+      "BPL Certificate",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at local Panchayat office",
+      "Submit age and BPL proof",
+      "Verification by BDO",
+      "Pension starts monthly"
+    ],
+    "officialLink": "https://nsap.nic.in",
+    "helplineNumber": "1800-111-555",
+    "commonRejectionReasons": [
+      "Not in BPL list",
+      "Age below 60"
+    ],
+    "tags": [
+      "senior",
+      "pension",
+      "elderly"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "apy-014",
+    "name": "Atal Pension Yojana",
+    "nameLocal": "अटल पेंशन योजना",
+    "description": "Guaranteed pension of Rs 1000-5000 after age 60",
+    "simpleDescription": "Save small amount monthly now, get guaranteed pension after 60",
+    "category": "senior_citizens",
+    "state": "ALL",
+    "benefitAmount": "Rs 1,000-5,000/month pension",
+    "benefitType": "Pension",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 40,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Guaranteed monthly pension after 60",
+      "Government co-contribution"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit bank branch",
+      "Fill APY form",
+      "Choose pension amount",
+      "Set auto-debit",
+      "Pension starts at 60"
+    ],
+    "officialLink": "https://npscra.nsdl.co.in/scheme-details.php",
+    "helplineNumber": "1800-110-069",
+    "commonRejectionReasons": [
+      "Age above 40",
+      "Income tax payer"
+    ],
+    "tags": [
+      "pension",
+      "retirement",
+      "savings"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmegp-015",
+    "name": "PM Employment Generation Programme",
+    "nameLocal": "पीएम रोजगार सृजन कार्यक्रम",
+    "description": "Subsidy for setting up micro enterprises",
+    "simpleDescription": "Government gives subsidy to start your own business",
+    "category": "employment",
+    "state": "ALL",
+    "benefitAmount": "15-35% subsidy on project cost",
+    "benefitType": "Subsidy",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "unemployed",
+        "self_employed"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Subsidy up to 35% of project cost",
+      "For manufacturing and service units"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Project Report",
+      "Caste Certificate",
+      "Bank Account",
+      "EDP Training Certificate"
+    ],
+    "applicationProcess": [
+      "Apply on kviconline.gov.in",
+      "Submit project report",
+      "Interview by KVIC/DIC",
+      "Approval and bank loan",
+      "Subsidy released"
+    ],
+    "officialLink": "https://kviconline.gov.in",
+    "helplineNumber": "1800-180-6763",
+    "commonRejectionReasons": [
+      "Project not viable",
+      "Already availed subsidy"
+    ],
+    "tags": [
+      "business",
+      "startup",
+      "subsidy"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmjjby-016",
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "nameLocal": "पीएम जीवन ज्योति बीमा",
+    "description": "Life insurance of Rs 2 lakh at Rs 436 per year",
+    "simpleDescription": "Life insurance for just Rs 436 per year",
+    "category": "financial",
+    "state": "ALL",
+    "benefitAmount": "Rs 2 lakh life cover",
+    "benefitType": "Insurance",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 50,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Rs 2 lakh life insurance",
+      "Auto-debit premium of Rs 436/year"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit any bank branch",
+      "Fill PMJJBY form",
+      "Give consent for auto-debit",
+      "Coverage starts immediately"
+    ],
+    "officialLink": "https://jansuraksha.gov.in",
+    "helplineNumber": "1800-180-1111",
+    "commonRejectionReasons": [
+      "Age above 50",
+      "No savings bank account"
+    ],
+    "tags": [
+      "insurance",
+      "life",
+      "premium"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmsby-017",
+    "name": "PM Suraksha Bima Yojana",
+    "category": "financial",
+    "state": "ALL",
+    "description": "Accident insurance of Rs 2 lakh at Rs 20/year",
+    "simpleDescription": "Accident insurance for just Rs 20 per year",
+    "benefitAmount": "Rs 2 lakh accident cover",
+    "benefitType": "Insurance",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 70,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Rs 2 lakh accidental death cover",
+      "Rs 1 lakh partial disability"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit bank",
+      "Fill form",
+      "Auto-debit Rs 20/year"
+    ],
+    "officialLink": "https://jansuraksha.gov.in",
+    "helplineNumber": "1800-180-1111",
+    "commonRejectionReasons": [
+      "Age above 70"
+    ],
+    "tags": [
+      "insurance",
+      "accident"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "jandhan-018",
+    "name": "Jan Dhan Yojana",
+    "category": "financial",
+    "state": "ALL",
+    "description": "Zero balance bank account with benefits",
+    "simpleDescription": "Free bank account with insurance and overdraft facility",
+    "benefitAmount": "Rs 1.3 lakh insurance + Rs 10,000 overdraft",
+    "benefitType": "Banking",
+    "eligibility": {
+      "ageMin": 10,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Zero balance account",
+      "Rs 1.3 lakh accident insurance",
+      "Rs 10,000 overdraft"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Address Proof"
+    ],
+    "applicationProcess": [
+      "Visit any bank",
+      "Fill account opening form",
+      "Submit Aadhaar",
+      "Get RuPay debit card"
+    ],
+    "officialLink": "https://pmjdy.gov.in",
+    "helplineNumber": "1800-180-1111",
+    "commonRejectionReasons": [
+      "Already has account"
+    ],
+    "tags": [
+      "banking",
+      "financial inclusion"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "ujjwala-019",
+    "name": "PM Ujjwala Yojana",
+    "category": "women_children",
+    "state": "ALL",
+    "description": "Free LPG connection for BPL women",
+    "simpleDescription": "Free gas connection and cylinder for poor women",
+    "benefitAmount": "Free LPG connection + first refill",
+    "benefitType": "In-Kind",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Free LPG connection",
+      "Free first refill",
+      "EMI for stove"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "BPL Certificate",
+      "Bank Account",
+      "Passport Photo"
+    ],
+    "applicationProcess": [
+      "Visit LPG distributor",
+      "Fill Ujjwala form",
+      "Submit BPL proof",
+      "Get connection in 7 days"
+    ],
+    "officialLink": "https://pmuy.gov.in",
+    "helplineNumber": "1800-266-6696",
+    "commonRejectionReasons": [
+      "Not in BPL list",
+      "Already has LPG"
+    ],
+    "tags": [
+      "LPG",
+      "women",
+      "BPL"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "startup-020",
+    "name": "Startup India",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Benefits for registered startups",
+    "simpleDescription": "Tax benefits and easy loans for startups",
+    "benefitAmount": "Tax exemption for 3 years",
+    "benefitType": "Tax Benefit + Funding",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "self_employed",
+        "business_owner"
+      ],
+      "incomeBrackets": [
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "3-year tax exemption",
+      "Easy winding up",
+      "Self-certification for labor laws"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Business Plan",
+      "Incorporation Certificate",
+      "PAN Card"
+    ],
+    "applicationProcess": [
+      "Register on startupindia.gov.in",
+      "Get DPIIT recognition",
+      "Apply for benefits",
+      "Get certificate"
+    ],
+    "officialLink": "https://startupindia.gov.in",
+    "helplineNumber": "1800-115-565",
+    "commonRejectionReasons": [
+      "Entity older than 10 years",
+      "Turnover above 100 crore"
+    ],
+    "tags": [
+      "startup",
+      "business",
+      "tax"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmkvy-021",
+    "name": "PM Kaushal Vikas Yojana",
+    "category": "skill",
+    "state": "ALL",
+    "description": "Free skill training and certification",
+    "simpleDescription": "Free training in different skills with government certificate",
+    "benefitAmount": "Free training + Rs 8,000 reward",
+    "benefitType": "Skill Training",
+    "eligibility": {
+      "ageMin": 15,
+      "ageMax": 45,
+      "occupations": [
+        "unemployed",
+        "student"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free skill training",
+      "Government certification",
+      "Rs 8000 reward on completion"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Education Certificate"
+    ],
+    "applicationProcess": [
+      "Visit pmkvyofficial.org",
+      "Find training center",
+      "Enroll in course",
+      "Complete training",
+      "Get certified"
+    ],
+    "officialLink": "https://pmkvyofficial.org",
+    "helplineNumber": "1800-123-9626",
+    "commonRejectionReasons": [
+      "Already trained under PMKVY"
+    ],
+    "tags": [
+      "skill",
+      "training",
+      "employment"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "standup-022",
+    "name": "Stand-Up India",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Loans for SC/ST and women entrepreneurs",
+    "simpleDescription": "Bank loans from Rs 10 lakh to Rs 1 crore for SC/ST and women to start business",
+    "benefitAmount": "Rs 10 lakh to Rs 1 crore",
+    "benefitType": "Loan",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "self_employed",
+        "business_owner",
+        "unemployed"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [
+        "SC",
+        "ST"
+      ]
+    },
+    "benefits": [
+      "Loan Rs 10L to 1Cr",
+      "For greenfield enterprises"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Caste Certificate",
+      "Business Plan",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit standupmitra.in",
+      "Fill application",
+      "Submit to bank",
+      "Bank processes loan"
+    ],
+    "officialLink": "https://standupmitra.in",
+    "helplineNumber": "1800-180-1111",
+    "commonRejectionReasons": [
+      "Not SC/ST or woman",
+      "Existing enterprise"
+    ],
+    "tags": [
+      "SC",
+      "ST",
+      "women",
+      "business",
+      "loan"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "janani-023",
+    "name": "Janani Suraksha Yojana",
+    "category": "healthcare",
+    "state": "ALL",
+    "description": "Cash assistance for institutional delivery",
+    "simpleDescription": "Money for pregnant women who deliver baby in hospital",
+    "benefitAmount": "Rs 600-1400",
+    "benefitType": "Direct Transfer",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Cash for hospital delivery",
+      "Free delivery services"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "BPL Card",
+      "MCH Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Register at Anganwadi/PHC",
+      "Get MCH card",
+      "Deliver at government hospital",
+      "Get payment"
+    ],
+    "officialLink": "https://nhm.gov.in",
+    "helplineNumber": "104",
+    "commonRejectionReasons": [
+      "Home delivery",
+      "Not BPL"
+    ],
+    "tags": [
+      "women",
+      "pregnancy",
+      "health"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "midday-024",
+    "name": "Mid-Day Meal Scheme",
+    "category": "education",
+    "state": "ALL",
+    "description": "Free lunch for school children",
+    "simpleDescription": "Free hot cooked meal for children in government schools",
+    "benefitAmount": "Free daily meal",
+    "benefitType": "In-Kind",
+    "eligibility": {
+      "ageMin": 5,
+      "ageMax": 14,
+      "occupations": [
+        "student"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free nutritious lunch",
+      "Improved attendance"
+    ],
+    "requiredDocuments": [
+      "School enrollment"
+    ],
+    "applicationProcess": [
+      "Automatic for govt school students"
+    ],
+    "officialLink": "https://mdm.nic.in",
+    "helplineNumber": "1800-180-8808",
+    "commonRejectionReasons": [
+      "Not in government school"
+    ],
+    "tags": [
+      "education",
+      "children",
+      "nutrition"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "adip-025",
+    "name": "ADIP Scheme",
+    "category": "disability",
+    "state": "ALL",
+    "description": "Aids and appliances for persons with disabilities",
+    "simpleDescription": "Free artificial limbs, hearing aids and other devices for disabled persons",
+    "benefitAmount": "Free assistive devices",
+    "benefitType": "In-Kind",
+    "eligibility": {
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "requiresDisability": true
+    },
+    "benefits": [
+      "Free assistive devices",
+      "Prosthetics and orthotics"
+    ],
+    "requiredDocuments": [
+      "Disability Certificate",
+      "Aadhaar Card",
+      "Income Certificate"
+    ],
+    "applicationProcess": [
+      "Apply at district disability center",
+      "Medical assessment",
+      "Device fitting",
+      "Follow-up"
+    ],
+    "officialLink": "https://disabilityaffairs.gov.in",
+    "helplineNumber": "1800-111-444",
+    "commonRejectionReasons": [
+      "Income above limit",
+      "No disability certificate"
+    ],
+    "tags": [
+      "disability",
+      "assistive devices"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nsap-widow-026",
+    "name": "Indira Gandhi National Widow Pension",
+    "category": "senior_citizens",
+    "state": "ALL",
+    "description": "Pension for widows below poverty line",
+    "simpleDescription": "Monthly pension for poor widows",
+    "benefitAmount": "Rs 300/month + state top-up",
+    "benefitType": "Monthly Pension",
+    "eligibility": {
+      "ageMin": 40,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Monthly pension"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Death Certificate of husband",
+      "BPL Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at Panchayat",
+      "Submit death certificate",
+      "Verification",
+      "Pension starts"
+    ],
+    "officialLink": "https://nsap.nic.in",
+    "helplineNumber": "1800-111-555",
+    "commonRejectionReasons": [
+      "Not BPL",
+      "Remarried"
+    ],
+    "tags": [
+      "widow",
+      "pension",
+      "women"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nsap-disability-027",
+    "name": "Indira Gandhi National Disability Pension",
+    "category": "disability",
+    "state": "ALL",
+    "description": "Pension for disabled persons below poverty line",
+    "simpleDescription": "Monthly money for poor disabled people",
+    "benefitAmount": "Rs 300/month + state top-up",
+    "benefitType": "Monthly Pension",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "requiresDisability": true
+    },
+    "benefits": [
+      "Monthly pension"
+    ],
+    "requiredDocuments": [
+      "Disability Certificate",
+      "Aadhaar Card",
+      "BPL Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at Panchayat/District office",
+      "Submit disability proof",
+      "Verification",
+      "Pension starts"
+    ],
+    "officialLink": "https://nsap.nic.in",
+    "helplineNumber": "1800-111-555",
+    "commonRejectionReasons": [
+      "Not BPL",
+      "Disability below 80%"
+    ],
+    "tags": [
+      "disability",
+      "pension"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "scholarship-merit-028",
+    "name": "Merit-cum-Means Scholarship",
+    "category": "education",
+    "state": "ALL",
+    "description": "Scholarship for meritorious students from poor families",
+    "simpleDescription": "Money for bright students from poor families for higher education",
+    "benefitAmount": "Rs 20,000/year",
+    "benefitType": "Scholarship",
+    "eligibility": {
+      "ageMin": 16,
+      "ageMax": 30,
+      "occupations": [
+        "student"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [
+        "OBC",
+        "SC",
+        "ST"
+      ]
+    },
+    "benefits": [
+      "Annual scholarship",
+      "Covers tuition partially"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Income Certificate",
+      "Mark Sheets",
+      "Caste Certificate",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply on NSP portal",
+      "Upload documents",
+      "Institution verifies",
+      "Amount credited"
+    ],
+    "officialLink": "https://scholarships.gov.in",
+    "helplineNumber": "0120-6619540",
+    "commonRejectionReasons": [
+      "Low marks",
+      "Income above limit"
+    ],
+    "tags": [
+      "scholarship",
+      "merit",
+      "education"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "svandhi-029",
+    "name": "PM SVANidhi",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Micro credit for street vendors",
+    "simpleDescription": "Small loan for street vendors to restart their livelihood",
+    "benefitAmount": "Rs 10,000 - Rs 50,000",
+    "benefitType": "Micro Loan",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "self_employed",
+        "daily_wage"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Loan without collateral",
+      "Interest subsidy of 7%",
+      "Digital payments cashback"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Vendor Certificate/ID",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply on pmsvanidhi.mohua.gov.in",
+      "Submit vendor ID",
+      "Bank processes loan",
+      "Amount disbursed"
+    ],
+    "officialLink": "https://pmsvanidhi.mohua.gov.in",
+    "helplineNumber": "1800-11-8111",
+    "commonRejectionReasons": [
+      "No vendor certificate",
+      "Previous loan default"
+    ],
+    "tags": [
+      "vendor",
+      "street",
+      "micro loan"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "dbt-030",
+    "name": "Direct Benefit Transfer",
+    "category": "financial",
+    "state": "ALL",
+    "description": "Direct cash transfer to bank accounts for various welfare schemes",
+    "simpleDescription": "Government sends money directly to your bank account",
+    "benefitAmount": "Varies by scheme",
+    "benefitType": "Direct Transfer",
+    "eligibility": {
+      "ageMin": 0,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Direct bank transfer",
+      "No middlemen"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account linked to Aadhaar"
+    ],
+    "applicationProcess": [
+      "Link Aadhaar to bank account",
+      "Apply for eligible schemes",
+      "Amount transferred directly"
+    ],
+    "officialLink": "https://dbtbharat.gov.in",
+    "helplineNumber": "1800-111-555",
+    "tags": [
+      "DBT",
+      "bank transfer"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nfbs-031",
+    "name": "National Family Benefit Scheme",
+    "category": "women_children",
+    "state": "ALL",
+    "description": "Lump sum payment on death of primary breadwinner",
+    "simpleDescription": "Rs 20,000 given to family if the earning member passes away",
+    "benefitAmount": "Rs 20,000",
+    "benefitType": "Lump Sum",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 59,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "One-time payment of Rs 20,000"
+    ],
+    "requiredDocuments": [
+      "Death Certificate",
+      "BPL Card",
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at Panchayat within 1 year of death",
+      "Submit death certificate",
+      "Verification",
+      "Payment released"
+    ],
+    "officialLink": "https://nsap.nic.in",
+    "helplineNumber": "1800-111-555",
+    "tags": [
+      "death benefit",
+      "family"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmsby-032",
+    "name": "PM Shram Yogi Mandhan",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Pension for unorganized sector workers",
+    "simpleDescription": "Rs 3000 monthly pension after age 60 for daily wage workers",
+    "benefitAmount": "Rs 3,000/month after 60",
+    "benefitType": "Pension",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 40,
+      "occupations": [
+        "daily_wage",
+        "self_employed"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Rs 3000 monthly pension after 60",
+      "Government matches your contribution"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit nearest CSC center",
+      "Enroll with Aadhaar",
+      "Auto-debit monthly contribution",
+      "Pension starts at 60"
+    ],
+    "officialLink": "https://maandhan.in",
+    "helplineNumber": "1800-267-6888",
+    "tags": [
+      "pension",
+      "unorganized worker"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "swachh-033",
+    "name": "Swachh Bharat Mission",
+    "category": "housing",
+    "state": "ALL",
+    "description": "Financial assistance for construction of toilets",
+    "simpleDescription": "Government gives Rs 12,000 to build a toilet at home",
+    "benefitAmount": "Rs 12,000",
+    "benefitType": "Construction Subsidy",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Rs 12,000 for toilet construction"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "BPL Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at Gram Panchayat",
+      "Verified by Block office",
+      "Construct toilet",
+      "Payment released after verification"
+    ],
+    "officialLink": "https://swachhbharatmission.gov.in",
+    "helplineNumber": "1969",
+    "tags": [
+      "sanitation",
+      "toilet",
+      "rural"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "icds-034",
+    "name": "ICDS - Anganwadi Services",
+    "category": "women_children",
+    "state": "ALL",
+    "description": "Nutrition and early childhood care at Anganwadi centers",
+    "simpleDescription": "Free food, health checkups and preschool education for children under 6",
+    "benefitAmount": "Free nutrition + healthcare",
+    "benefitType": "In-Kind",
+    "eligibility": {
+      "ageMax": 6,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Supplementary nutrition",
+      "Health checkups",
+      "Immunization",
+      "Preschool education"
+    ],
+    "requiredDocuments": [
+      "Birth Certificate",
+      "Aadhaar Card of parent"
+    ],
+    "applicationProcess": [
+      "Visit nearest Anganwadi center",
+      "Register child",
+      "Services provided free"
+    ],
+    "officialLink": "https://icds-wcd.nic.in",
+    "helplineNumber": "181",
+    "tags": [
+      "children",
+      "nutrition",
+      "anganwadi"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "ddugky-035",
+    "name": "DDU-GKY",
+    "category": "skill",
+    "state": "ALL",
+    "description": "Skill training for rural youth with placement support",
+    "simpleDescription": "Free skill training and guaranteed job placement for rural youth",
+    "benefitAmount": "Free training + placement",
+    "benefitType": "Skill Training",
+    "eligibility": {
+      "ageMin": 15,
+      "ageMax": 35,
+      "occupations": [
+        "unemployed"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free residential training",
+      "Placement guarantee",
+      "Post-placement support"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Age Proof",
+      "Bank Account",
+      "BPL Card"
+    ],
+    "applicationProcess": [
+      "Apply through DDUGKY portal",
+      "Select training program",
+      "Attend training",
+      "Get placed"
+    ],
+    "officialLink": "https://ddugky.gov.in",
+    "helplineNumber": "1800-345-3707",
+    "tags": [
+      "skill",
+      "training",
+      "rural youth"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmgsy-036",
+    "name": "PM Gram Sadak Yojana",
+    "category": "infrastructure",
+    "state": "ALL",
+    "description": "All-weather road connectivity to rural habitations",
+    "simpleDescription": "Building proper roads to connect villages",
+    "benefitAmount": "Road construction",
+    "benefitType": "Infrastructure",
+    "eligibility": {
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "All-weather roads to villages"
+    ],
+    "requiredDocuments": [],
+    "applicationProcess": [
+      "Selected by government based on population criteria"
+    ],
+    "officialLink": "https://pmgsy.nic.in",
+    "helplineNumber": "1800-180-6763",
+    "tags": [
+      "roads",
+      "rural",
+      "infrastructure"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "saubhagya-037",
+    "name": "Saubhagya Scheme",
+    "category": "infrastructure",
+    "state": "ALL",
+    "description": "Free electricity connections for unelectrified households",
+    "simpleDescription": "Free electricity connection for homes that dont have power",
+    "benefitAmount": "Free power connection",
+    "benefitType": "In-Kind",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free electricity connection",
+      "LED bulb",
+      "Wiring"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Address Proof"
+    ],
+    "applicationProcess": [
+      "Contact local electricity office",
+      "Submit Aadhaar",
+      "Free connection provided"
+    ],
+    "officialLink": "https://saubhagya.gov.in",
+    "helplineNumber": "1800-180-3333",
+    "tags": [
+      "electricity",
+      "power",
+      "rural"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nrlm-038",
+    "name": "DAY-NRLM",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Self-employment and skill building through SHGs",
+    "simpleDescription": "Join self-help groups for savings, training and micro-loans",
+    "benefitAmount": "SHG support + micro-loans",
+    "benefitType": "Livelihood Support",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "unemployed",
+        "self_employed",
+        "daily_wage"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Self-Help Group formation",
+      "Revolving fund",
+      "Bank linkage",
+      "Skill training"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Contact local NRLM coordinator",
+      "Join or form SHG",
+      "Get training",
+      "Access loans"
+    ],
+    "officialLink": "https://aajeevika.gov.in",
+    "helplineNumber": "1800-180-5999",
+    "tags": [
+      "SHG",
+      "women",
+      "livelihood"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "soil-039",
+    "name": "Soil Health Card Scheme",
+    "category": "agriculture",
+    "state": "ALL",
+    "description": "Free soil testing and health card for farmers",
+    "simpleDescription": "Free soil test for your farm with recommendations on what to grow",
+    "benefitAmount": "Free soil test",
+    "benefitType": "In-Kind",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "farmer"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free soil test every 2 years",
+      "Crop recommendations",
+      "Fertilizer guidance"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Land Records"
+    ],
+    "applicationProcess": [
+      "Visit nearest Krishi Vigyan Kendra",
+      "Collect soil sample",
+      "Get tested",
+      "Receive Soil Health Card"
+    ],
+    "officialLink": "https://soilhealth.dac.gov.in",
+    "helplineNumber": "1800-180-1551",
+    "tags": [
+      "farmer",
+      "soil",
+      "agriculture"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "eShram-040",
+    "name": "e-Shram Portal",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Registration of unorganized workers for social security",
+    "simpleDescription": "Register on e-Shram to get Rs 2 lakh accident insurance free",
+    "benefitAmount": "Rs 2 lakh accident insurance",
+    "benefitType": "Insurance",
+    "eligibility": {
+      "ageMin": 16,
+      "ageMax": 59,
+      "occupations": [
+        "daily_wage",
+        "self_employed",
+        "unemployed"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Rs 2 lakh accidental death cover",
+      "Rs 1 lakh partial disability",
+      "Social security registration"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Bank Account",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Visit eshram.gov.in",
+      "Register with Aadhaar",
+      "Get e-Shram card",
+      "Auto-enrolled in PMSBY"
+    ],
+    "officialLink": "https://eshram.gov.in",
+    "helplineNumber": "14434",
+    "tags": [
+      "unorganized worker",
+      "insurance",
+      "registration"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "jal-041",
+    "name": "Jal Jeevan Mission",
+    "category": "infrastructure",
+    "state": "ALL",
+    "description": "Tap water connection to every rural household",
+    "simpleDescription": "Free piped water connection to your home in the village",
+    "benefitAmount": "Free tap water connection",
+    "benefitType": "Infrastructure",
+    "eligibility": {
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Functional tap water connection",
+      "55 liters per capita per day"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Address Proof"
+    ],
+    "applicationProcess": [
+      "Apply at Gram Panchayat",
+      "Village Action Plan prepared",
+      "Connection provided"
+    ],
+    "officialLink": "https://jaljeevanmission.gov.in",
+    "helplineNumber": "1800-180-2233",
+    "tags": [
+      "water",
+      "rural",
+      "tap water"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "digital-042",
+    "name": "Digital India Programme",
+    "category": "skill",
+    "state": "ALL",
+    "description": "Digital literacy and IT training for rural citizens",
+    "simpleDescription": "Free computer and internet training",
+    "benefitAmount": "Free digital training",
+    "benefitType": "Skill Training",
+    "eligibility": {
+      "ageMin": 14,
+      "ageMax": 60,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free digital literacy training",
+      "Certificate"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card"
+    ],
+    "applicationProcess": [
+      "Visit nearest CSC center",
+      "Enroll in PMGDISHA",
+      "Complete 20 hours training",
+      "Get certificate"
+    ],
+    "officialLink": "https://pmgdisha.in",
+    "helplineNumber": "1800-3000-3468",
+    "tags": [
+      "digital",
+      "training",
+      "computer"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nbcfdc-043",
+    "name": "NBCFDC Loan Scheme",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Low-interest loans for backward classes",
+    "simpleDescription": "Easy loans at low interest for OBC and backward class families to start business",
+    "benefitAmount": "Up to Rs 15 lakh",
+    "benefitType": "Loan",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "unemployed",
+        "self_employed"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [
+        "OBC"
+      ]
+    },
+    "benefits": [
+      "Low interest loans",
+      "For income-generating activities"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "OBC Certificate",
+      "Income Certificate",
+      "Bank Account",
+      "Project Report"
+    ],
+    "applicationProcess": [
+      "Apply through state channelizing agency",
+      "Submit project report",
+      "Loan sanctioned",
+      "Amount disbursed"
+    ],
+    "officialLink": "https://nbcfdc.gov.in",
+    "helplineNumber": "011-23534025",
+    "tags": [
+      "OBC",
+      "loan",
+      "backward classes"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmfme-044",
+    "name": "PM FME Scheme",
+    "category": "employment",
+    "state": "ALL",
+    "description": "Support for micro food processing enterprises",
+    "simpleDescription": "Government helps small food businesses with money and training",
+    "benefitAmount": "35% subsidy up to Rs 10 lakh",
+    "benefitType": "Subsidy",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "self_employed",
+        "business_owner"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "35% subsidy on project cost",
+      "Technical support",
+      "Marketing support"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Business Registration",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply on pmfme.mofpi.gov.in",
+      "Submit project details",
+      "Approval by DIC",
+      "Subsidy released"
+    ],
+    "officialLink": "https://pmfme.mofpi.gov.in",
+    "helplineNumber": "1800-111-175",
+    "tags": [
+      "food processing",
+      "MSME",
+      "subsidy"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "beti-045",
+    "name": "Beti Bachao Beti Padhao",
+    "category": "women_children",
+    "state": "ALL",
+    "description": "Improving child sex ratio and education for girls",
+    "simpleDescription": "Government support to ensure girls safety and education",
+    "benefitAmount": "Awareness + linked schemes",
+    "benefitType": "Welfare",
+    "eligibility": {
+      "ageMax": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Girl child protection",
+      "Education support",
+      "Linked to SSY and other schemes"
+    ],
+    "requiredDocuments": [
+      "Birth Certificate",
+      "Aadhaar Card"
+    ],
+    "applicationProcess": [
+      "Benefits through Anganwadi",
+      "School enrollment initiatives",
+      "Linked to Sukanya Samriddhi"
+    ],
+    "officialLink": "https://wcd.nic.in/bbbp-schemes",
+    "helplineNumber": "181",
+    "tags": [
+      "girl child",
+      "education",
+      "women"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "gobar-046",
+    "name": "GOBAR-DHAN Scheme",
+    "category": "agriculture",
+    "state": "ALL",
+    "description": "Converting cattle dung to biogas and bio-CNG",
+    "simpleDescription": "Earn money by converting cow dung into energy",
+    "benefitAmount": "Subsidy for biogas plant",
+    "benefitType": "Subsidy",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [
+        "farmer"
+      ],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Biogas plant subsidy",
+      "Extra income from waste"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Land Records",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Apply at district agriculture office",
+      "Inspection by officials",
+      "Subsidy sanctioned",
+      "Plant installed"
+    ],
+    "officialLink": "https://sbm.gov.in/gbdw20",
+    "helplineNumber": "1969",
+    "tags": [
+      "biogas",
+      "farmer",
+      "renewable"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "digilocker-047",
+    "name": "DigiLocker",
+    "category": "financial",
+    "state": "ALL",
+    "description": "Digital document wallet for Indian citizens",
+    "simpleDescription": "Store all your government documents digitally on phone - free",
+    "benefitAmount": "Free digital storage",
+    "benefitType": "Digital Service",
+    "eligibility": {
+      "ageMin": 0,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Free cloud storage for documents",
+      "Paperless verification",
+      "Aadhaar authenticated"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Download DigiLocker app",
+      "Sign up with Aadhaar",
+      "Access documents digitally"
+    ],
+    "officialLink": "https://digilocker.gov.in",
+    "helplineNumber": "011-24301261",
+    "tags": [
+      "digital",
+      "documents",
+      "paperless"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "umang-048",
+    "name": "UMANG App",
+    "category": "financial",
+    "state": "ALL",
+    "description": "Unified Mobile Application for government services",
+    "simpleDescription": "One app to access 1200+ government services on your phone",
+    "benefitAmount": "Free government services",
+    "benefitType": "Digital Service",
+    "eligibility": {
+      "ageMin": 0,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Access 1200+ government services",
+      "Bill payments",
+      "Scholarship tracking"
+    ],
+    "requiredDocuments": [
+      "Mobile Number"
+    ],
+    "applicationProcess": [
+      "Download UMANG app",
+      "Register with mobile number",
+      "Access services"
+    ],
+    "officialLink": "https://web.umang.gov.in",
+    "helplineNumber": "1800-115-565",
+    "tags": [
+      "mobile",
+      "government services",
+      "digital"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "pmsma-049",
+    "name": "PM Surakshit Matritva Abhiyan",
+    "category": "healthcare",
+    "state": "ALL",
+    "description": "Free antenatal checkup for pregnant women on 9th of every month",
+    "simpleDescription": "Free pregnancy checkup at government hospital on 9th of every month",
+    "benefitAmount": "Free checkup",
+    "benefitType": "Healthcare",
+    "eligibility": {
+      "ageMin": 18,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": [],
+      "gender": "female"
+    },
+    "benefits": [
+      "Free antenatal checkup",
+      "High-risk pregnancy identification",
+      "Free medicines"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "MCP Card"
+    ],
+    "applicationProcess": [
+      "Visit government hospital on 9th of any month",
+      "Get free checkup",
+      "No registration needed"
+    ],
+    "officialLink": "https://pmsma.nhp.gov.in",
+    "helplineNumber": "104",
+    "tags": [
+      "pregnancy",
+      "women",
+      "health"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  },
+  {
+    "schemeId": "nps-050",
+    "name": "National Pension System",
+    "category": "financial",
+    "state": "ALL",
+    "description": "Voluntary retirement savings for all citizens",
+    "simpleDescription": "Save for retirement with government contribution and tax benefits",
+    "benefitAmount": "Tax benefit + pension",
+    "benefitType": "Pension",
+    "eligibility": {
+      "ageMin": 18,
+      "ageMax": 65,
+      "occupations": [],
+      "incomeBrackets": [
+        "BPL",
+        "0-2.5L",
+        "2.5-5L",
+        "5-10L",
+        "10L+"
+      ],
+      "states": [
+        "ALL"
+      ],
+      "categories": []
+    },
+    "benefits": [
+      "Tax deduction under 80CCD",
+      "Flexible investment",
+      "Government co-contribution for some categories"
+    ],
+    "requiredDocuments": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Bank Account"
+    ],
+    "applicationProcess": [
+      "Visit enps.nsdl.com",
+      "Open NPS account online",
+      "Choose pension fund",
+      "Start contributing"
+    ],
+    "officialLink": "https://npscra.nsdl.co.in",
+    "helplineNumber": "1800-110-708",
+    "tags": [
+      "pension",
+      "retirement",
+      "NPS"
+    ],
+    "lastUpdated": "2024-01-15",
+    "isActive": true
+  }
+]

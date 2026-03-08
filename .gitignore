@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment files (SENSITIVE - contains AWS keys!)
+.env
+.env.local
+.env.production
+.env*.local
+backend/.env
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Docker
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deployment artifacts
+deploy_lambda.ps1
+build_log.txt
+roles.json
+role_arn.txt
+lambda_create.txt
+function_url.txt
+perm_out.txt
+
+# Database
+*.db
+*.sqlite3
+data/chroma_db/
