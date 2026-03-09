@@ -180,6 +180,20 @@ def generate_reasoning(user_profile: Dict, scheme: Dict, score: int) -> str:
     name = scheme.get("name", "")
     benefit = scheme.get("benefitAmount", "")
 
+    import os
+    if os.getenv("LLM_PROVIDER") == "bedrock":
+        try:
+            prompt = (f"You are a helpful government scheme advisor. "
+                      f"Explain in 2 short sentences why a user (Age: {age}, Occupation: {occupation}, "
+                      f"State: {state}, Income: {income}) qualifies for the '{name}' scheme. "
+                      f"The scheme provides: {benefit}. "
+                      f"Keep the tone encouraging, personalize it to their profile, and do not use bullet points.")
+            reasoning = generate(prompt, max_tokens=150)
+            if reasoning and len(reasoning) > 10:
+                return reasoning.strip()
+        except Exception as e:
+            logger.error(f"LLM reasoning failed: {e}")
+
     return (f"As a {occupation} in {state}, aged {age}, with income in the {income} bracket, "
             f"you match {score}% of {name}'s eligibility criteria. "
             f"This scheme offers {benefit}. "
@@ -200,7 +214,6 @@ def get_recommendations(user_profile: Dict, all_schemes: List[Dict]) -> List[Dic
         score = calculate_eligibility_score(user_profile, scheme)
         matched = get_matched_criteria(user_profile, scheme)
         missing = get_missing_criteria(user_profile, scheme)
-        reasoning = generate_reasoning(user_profile, scheme, score)
 
         docs = scheme.get("requiredDocuments", [])
         if isinstance(docs, str):
@@ -212,7 +225,7 @@ def get_recommendations(user_profile: Dict, all_schemes: List[Dict]) -> List[Dic
         ranked.append({
             "scheme": scheme,
             "eligibilityScore": score,
-            "reasoning": reasoning,
+            "reasoning": "",  # Will be enriched concurrently
             "matchedCriteria": matched,
             "missingCriteria": missing,
             "requiredDocuments": docs,
@@ -220,6 +233,16 @@ def get_recommendations(user_profile: Dict, all_schemes: List[Dict]) -> List[Dic
 
     # Sort by eligibility score descending
     ranked.sort(key=lambda x: x["eligibilityScore"], reverse=True)
+    top_ranked = ranked[:10]
+
+    # Generate reasoning concurrently for the top results to save time
+    import concurrent.futures
+    def enrich_reasoning(item):
+        item["reasoning"] = generate_reasoning(user_profile, item["scheme"], item["eligibilityScore"])
+        return item
+        
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        top_ranked = list(executor.map(enrich_reasoning, top_ranked))
 
     # Return top 10
-    return ranked[:10]
+    return top_ranked

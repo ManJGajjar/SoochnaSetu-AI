@@ -71,22 +71,23 @@ def _call_bedrock(prompt: str, max_tokens: int, temperature: float) -> str:
     """Call AWS Bedrock Claude model with retry logic."""
     import boto3
 
-    region = os.getenv("AWS_REGION", "us-east-1")
-    model_id = os.getenv("BEDROCK_MODEL_ID", "anthropic.claude-3-haiku-20240307-v1:0")
+    region = os.getenv("AWS_REGION", "ap-south-1")
+    model_id = os.getenv("BEDROCK_MODEL_ID", "amazon.titan-text-express-v1")
     client = boto3.client("bedrock-runtime", region_name=region)
 
     body = json.dumps({
-        "anthropic_version": "bedrock-2023-05-31",
-        "max_tokens": max_tokens,
-        "temperature": temperature,
-        "messages": [{"role": "user", "content": prompt}]
+        "inputText": prompt,
+        "textGenerationConfig": {
+            "maxTokenCount": max_tokens,
+            "temperature": temperature
+        }
     })
 
     for attempt in range(3):
         try:
-            response = client.invoke_model(modelId=model_id, body=body)
+            response = client.invoke_model(modelId=model_id, body=body, accept="application/json", contentType="application/json")
             result = json.loads(response["body"].read())
-            return result["content"][0]["text"]
+            return result["results"][0]["outputText"].strip()
         except Exception as e:
             if attempt < 2:
                 wait = (2 ** attempt) + random.uniform(0, 1)

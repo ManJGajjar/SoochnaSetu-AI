@@ -10,8 +10,7 @@ from services.rag_service import query_pipeline, generate_summary
 
 router = APIRouter()
 
-# In-memory store for processed documents (would be DynamoDB in production)
-_documents = {}
+from db.database import get_table
 
 
 class AskRequest(BaseModel):
@@ -56,8 +55,9 @@ async def upload_document(file: UploadFile = File(...)):
     full_text = "\n".join([p.get("text", "") for p in result.get("pages", [])])
     summary = generate_summary(full_text[:3000]) if full_text else "No text extracted."
 
-    # Store metadata
-    _documents[doc_id] = {
+    # Store metadata in DynamoDB
+    table = get_table('SoochnaSetu-Documents')
+    doc_item = {
         "documentId": doc_id,
         "fileName": file.filename,
         "uploadedAt": datetime.utcnow().isoformat(),
@@ -67,6 +67,7 @@ async def upload_document(file: UploadFile = File(...)):
         "summary": summary,
         "fullText": full_text,
     }
+    table.put_item(Item=doc_item)
 
     return {
         "documentId": doc_id,
@@ -83,7 +84,10 @@ async def upload_document(file: UploadFile = File(...)):
 @router.get("/{doc_id}/summary")
 def get_summary(doc_id: str):
     """Get AI-generated summary for a processed document."""
-    doc = _documents.get(doc_id)
+    table = get_table('SoochnaSetu-Documents')
+    response = table.get_item(Key={'documentId': doc_id})
+    doc = response.get('Item')
+    
     if not doc:
         raise HTTPException(404, f"Document {doc_id} not found")
 
@@ -98,7 +102,10 @@ def get_summary(doc_id: str):
 @router.post("/{doc_id}/ask")
 def ask_document(doc_id: str, request: AskRequest):
     """RAG Q&A on a specific document."""
-    doc = _documents.get(doc_id)
+    table = get_table('SoochnaSetu-Documents')
+    response = table.get_item(Key={'documentId': doc_id})
+    doc = response.get('Item')
+    
     if not doc:
         raise HTTPException(404, f"Document {doc_id} not found")
 

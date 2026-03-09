@@ -85,6 +85,7 @@ export default function SchemesPage() {
         matchedCriteria: rec.matchedCriteria || [],
         missingCriteria: rec.missingCriteria || [],
         requiredDocuments: rec.requiredDocuments || [],
+        youtubeTutorialLink: rec.scheme.youtubeTutorialLink,
       }))
 
       setMatchedSchemes(mapped)
@@ -210,9 +211,14 @@ export default function SchemesPage() {
                   >
                     Apply Now →
                   </a>
-                  <button className="btn-secondary">
-                    View Details
-                  </button>
+                  <a
+                    href={scheme.youtubeTutorialLink || `https://www.youtube.com/results?search_query=how+to+apply+for+${encodeURIComponent(scheme.name)}+online`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary flex-1 text-center"
+                  >
+                    Watch Tutorial 📺
+                  </a>
                 </div>
               </div>
             ))}

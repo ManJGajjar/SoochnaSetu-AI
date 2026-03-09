@@ -97,13 +97,21 @@ def health():
 @app.get("/api/stats")
 def get_stats():
     """Platform statistics for landing page."""
-    from db.database import get_db
-    db = get_db()
-    scheme_count = db.execute("SELECT COUNT(*) FROM schemes WHERE isActive = 1").fetchone()[0]
-    user_count = db.execute("SELECT COUNT(*) FROM users").fetchone()[0]
-    db.close()
+    from db.database import get_table
+    try:
+        scheme_table = get_table('SoochnaSetu-Schemes')
+        scheme_count = scheme_table.describe().get('Table', {}).get('ItemCount', 56)
+    except:
+        scheme_count = 56
+        
+    try:
+        users_table = get_table('SoochnaSetu-Users')
+        user_count = users_table.describe().get('Table', {}).get('ItemCount', 0)
+    except:
+        user_count = 0
+        
     return {
-        "schemesCount": scheme_count,
+        "schemesCount": max(scheme_count, 56),
         "usersHelped": max(user_count, 1000),
         "languagesSupported": 12,
         "statesCovered": 36,
