@@ -141,10 +141,10 @@ export default function VoicePage() {
                 <p className="text-sm text-gray-600 mb-3">Soochna Setu AI:</p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">{response}</p>
                 <div className="flex gap-3">
-                  <button className="btn-primary">
-                    View Details
-                  </button>
-                  <button className="btn-secondary">
+                  <a href="/schemes" className="btn-primary flex items-center justify-center text-center px-4">
+                    Find Schemes
+                  </a>
+                  <button onClick={() => {setResponse(''); setTranscript('');}} className="btn-secondary">
                     Ask Another
                   </button>
                 </div>
