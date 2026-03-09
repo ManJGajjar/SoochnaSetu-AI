@@ -31,7 +31,7 @@ def _bedrock_embed(text: str) -> List[float]:
     import boto3, json
     client = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"))
     response = client.invoke_model(
-        modelId="amazon.titan-embed-text-v1",
+        modelId="amazon.titan-embed-text-v2:0",
         body=json.dumps({"inputText": text})
     )
     result = json.loads(response["body"].read())
