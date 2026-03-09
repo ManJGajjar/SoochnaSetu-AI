@@ -54,9 +54,9 @@ def synthesize(request: SynthesizeRequest):
 
 def _aws_transcribe(audio_data: str, language: str):
     import boto3, base64, uuid, time
-    s3 = boto3.client("s3")
-    transcribe = boto3.client("transcribe", region_name=os.getenv("AWS_REGION", "us-east-1"))
-    bucket = os.getenv("S3_AUDIO_BUCKET", "soochna-setu-audio")
+    s3 = boto3.client("s3", region_name=os.getenv("AWS_REGION", "ap-south-1"))
+    transcribe = boto3.client("transcribe", region_name=os.getenv("AWS_REGION", "ap-south-1"))
+    bucket = "soochna-setu-audio-11b22"
 
     audio_bytes = base64.b64decode(audio_data)
     key = f"transcriptions/{uuid.uuid4()}.mp3"
@@ -88,11 +88,36 @@ def _aws_transcribe(audio_data: str, language: str):
 
 def _aws_synthesize(text: str, language: str):
     import boto3
-    polly = boto3.client("polly", region_name=os.getenv("AWS_REGION", "us-east-1"))
+    import uuid
+    import time
 
-    voice_map = {"en-IN": "Aditi", "hi-IN": "Aditi"}
+    polly = boto3.client("polly", region_name=os.getenv("AWS_REGION", "ap-south-1"))
+    s3 = boto3.client("s3", region_name=os.getenv("AWS_REGION", "ap-south-1"))
+    bucket = "soochna-setu-audio-11b22"
+
+    voice_map = {"en-IN": "Kajal", "hi-IN": "Aditi"}
     voice = voice_map.get(language, "Aditi")
 
-    response = polly.synthesize_speech(Text=text, OutputFormat="mp3", VoiceId=voice)
-    # In production, store in S3 and return URL
-    return {"audioUrl": None, "text": text, "message": "Audio generated via AWS Polly"}
+    response = polly.synthesize_speech(
+        Text=text, 
+        OutputFormat="mp3", 
+        VoiceId=voice,
+        Engine="neural"
+    )
+    
+    if "AudioStream" in response:
+        audio_stream = response["AudioStream"].read()
+        
+        # Save to S3
+        file_name = f"tts/{int(time.time())}_{uuid.uuid4().hex[:6]}.mp3"
+        s3.put_object(
+            Bucket=bucket,
+            Key=file_name,
+            Body=audio_stream,
+            ContentType="audio/mpeg"
+        )
+        
+        audio_url = f"https://{bucket}.s3.amazonaws.com/{file_name}"
+        return {"audioUrl": audio_url, "text": text, "message": "Audio generated via AWS Polly"}
+        
+    return {"audioUrl": None, "text": text, "message": "Failed to generate audio"}
