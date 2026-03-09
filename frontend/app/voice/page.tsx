@@ -33,7 +33,7 @@ export default function VoicePage() {
       setResponse(result.response || 'Sorry, I could not process your request.')
     } catch (err) {
       console.error('Chat error:', err)
-      setResponse('Could not connect to Soochna Setu AI backend. Please make sure the server is running.')
+      setResponse('Could not connect to the backend AWS Lambda service.')
     } finally {
       setIsProcessing(false)
     }

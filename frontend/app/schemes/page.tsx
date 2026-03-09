@@ -91,7 +91,7 @@ export default function SchemesPage() {
       setShowResults(true)
     } catch (err) {
       console.error('API Error:', err)
-      alert('Could not connect to backend. Make sure the backend server is running on port 8000.')
+      alert('Could not connect to the backend. Please ensure the AWS Lambda service is active.')
     } finally {
       setLoading(false)
     }

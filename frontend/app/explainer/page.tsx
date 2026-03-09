@@ -84,7 +84,7 @@ export default function ExplainerPage() {
       })
     } catch (err) {
       console.error('Upload error:', err)
-      alert('Could not connect to backend. Make sure the server is running on port 8000.')
+      alert('Could not connect to the backend. Please ensure the AWS Lambda service is active.')
     } finally {
       setIsProcessing(false)
     }
@@ -225,7 +225,7 @@ export default function ExplainerPage() {
                   } catch {
                     setChatMessages(msgs => [...msgs, {
                       role: 'assistant',
-                      text: 'Could not connect to the backend. Please try again.',
+                      text: 'Could not connect to the backend AWS Lambda service. Please try again.',
                     }])
                   } finally {
                     setChatLoading(false)
