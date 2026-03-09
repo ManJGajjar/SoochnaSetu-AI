@@ -1,4 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://lpbk52uyspqot6qucbffi2vzri0imjqt.lambda-url.ap-south-1.on.aws';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://5l8mvhbbbd.execute-api.ap-south-1.amazonaws.com';
 
 async function apiRequest(path: string, options: RequestInit = {}) {
   const url = `${API_BASE}${path}`;

@@ -8,7 +8,7 @@ applications:
             - npm ci
         build:
           commands:
-            - echo "NEXT_PUBLIC_API_URL=https://lpbk52uyspqot6qucbffi2vzri0imjqt.lambda-url.ap-south-1.on.aws" >> .env.production
+            - echo "NEXT_PUBLIC_API_URL=https://5l8mvhbbbd.execute-api.ap-south-1.amazonaws.com" >> .env.production
             - env | grep -e NEXT_PUBLIC_ >> .env.production || true
             - npm run build
       artifacts:
