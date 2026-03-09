@@ -68,30 +68,32 @@ def generate(prompt: str, max_tokens: int = 1000, temperature: float = 0.3) -> s
 
 
 def _call_bedrock(prompt: str, max_tokens: int, temperature: float) -> str:
-    """Call AWS Bedrock Claude model with retry logic."""
+    """Call AWS Bedrock Amazon Nova model with retry logic."""
     import boto3
 
     region = os.getenv("AWS_REGION", "ap-south-1")
-    model_id = os.getenv("BEDROCK_MODEL_ID", "amazon.titan-text-express-v1")
+    # Using cross-region inference profile for Amazon Nova in APAC
+    model_id = os.getenv("BEDROCK_MODEL_ID", "apac.amazon.nova-micro-v1:0")
     client = boto3.client("bedrock-runtime", region_name=region)
-
-    body = json.dumps({
-        "inputText": prompt,
-        "textGenerationConfig": {
-            "maxTokenCount": max_tokens,
-            "temperature": temperature
-        }
-    })
 
     for attempt in range(3):
         try:
-            response = client.invoke_model(modelId=model_id, body=body, accept="application/json", contentType="application/json")
-            result = json.loads(response["body"].read())
-            return result["results"][0]["outputText"].strip()
+            response = client.converse(
+                modelId=model_id,
+                messages=[{
+                    "role": "user",
+                    "content": [{"text": prompt}]
+                }],
+                inferenceConfig={
+                    "maxTokens": max_tokens,
+                    "temperature": temperature
+                }
+            )
+            return response["output"]["message"]["content"][0]["text"].strip()
         except Exception as e:
             if attempt < 2:
                 wait = (2 ** attempt) + random.uniform(0, 1)
-                logger.warning(f"Bedrock attempt {attempt+1} failed, retrying in {wait:.1f}s")
+                logger.warning(f"Bedrock attempt {attempt+1} failed, retrying in {wait:.1f}s. Error: {e}")
                 time.sleep(wait)
             else:
                 raise
