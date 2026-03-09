@@ -73,7 +73,7 @@ npm run build
 
 | Service | Purpose | Fallback |
 |---|---|---|
-| **Bedrock** (Claude 3 Haiku) | AI responses, scheme explanations | Rule-based keyword matching |
+| **Bedrock** (Amazon Titan) | AI responses, scheme explanations | Rule-based keyword matching |
 | **Textract** | Document OCR | pdfplumber (local) |
 | **S3** | Document storage | Local filesystem |
 | **Transcribe** | Speech-to-text | Web Speech API (browser) |
