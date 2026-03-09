@@ -52,7 +52,10 @@ export async function uploadDocument(file: File) {
     method: 'POST',
     body: formData,
   });
-  if (!res.ok) throw new Error('Upload failed');
+  if (!res.ok) {
+    const errorData = await res.json().catch(() => ({ detail: 'Upload failed' }));
+    throw new Error(errorData.detail || errorData.message || 'Upload failed');
+  }
   return res.json();
 }
 

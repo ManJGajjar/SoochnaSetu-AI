@@ -82,9 +82,9 @@ export default function ExplainerPage() {
         confidence: result.confidence || 0.85,
         documentId: result.documentId,
       })
-    } catch (err) {
+    } catch (err: any) {
       console.error('Upload error:', err)
-      alert('Could not connect to the backend. Please ensure the AWS Lambda service is active.')
+      alert(err.message || 'Could not connect to the backend. Please ensure the AWS Lambda service is active.')
     } finally {
       setIsProcessing(false)
     }
