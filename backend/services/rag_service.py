@@ -93,6 +93,23 @@ Language: {'Hindi' if language == 'hi' else 'English'}"""
     }
 
 
+def check_document_relevance(text: str) -> bool:
+    """Check if document is relevant to civic/government info."""
+    import os
+    if os.getenv("LLM_PROVIDER", "rule_based") not in ("bedrock", "openai"):
+        return True
+        
+    prompt = f"""Analyze the following document text and determine if it is related to government schemes, public policy, civic issues, official guidelines, or citizen welfare.
+Reply ONLY with the exact word YES or NO.
+
+Text:
+{text[:1000]}"""
+    response = generate(prompt, max_tokens=10, temperature=0.1).strip().upper()
+    if "NO" in response and "YES" not in response:
+        return False
+    return True
+
+
 def generate_summary(text: str, language: str = "en") -> str:
     """Generate a plain-language summary of document text."""
     prompt = f"""{SYSTEM_PROMPT}

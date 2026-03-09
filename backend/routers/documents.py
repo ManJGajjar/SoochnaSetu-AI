@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from typing import Optional
 from services.ocr_service import extract_text_from_pdf
 from services.embeddings_service import store_chunks
-from services.rag_service import query_pipeline, generate_summary
+from services.rag_service import query_pipeline, generate_summary, check_document_relevance
 
 router = APIRouter()
 
@@ -41,6 +41,15 @@ async def upload_document(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(500, f"Document processing failed: {str(e)}")
 
+    full_text = "\n".join([p.get("text", "") for p in result.get("pages", [])])
+    
+    # AI Relevance Constraint
+    if full_text and not check_document_relevance(full_text):
+        raise HTTPException(
+            status_code=400, 
+            detail="Irrelevant Document Detected. Please upload a document related to government schemes, public policy, or civic affairs."
+        )
+
     # Store chunks in vector store
     chunks = result.get("chunks", [])
     if chunks:
@@ -52,7 +61,6 @@ async def upload_document(file: UploadFile = File(...)):
             pass  # Vector store optional
 
     # Generate summary
-    full_text = "\n".join([p.get("text", "") for p in result.get("pages", [])])
     summary = generate_summary(full_text[:3000]) if full_text else "No text extracted."
 
     # Store metadata in DynamoDB
